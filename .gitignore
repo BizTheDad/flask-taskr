@@ -1,2 +1,6 @@
 
 *.db
+*.pyc
+__pycache__
+_config.py
+*.DS_Store
