@@ -1,12 +1,5 @@
 import sqlite3
-import os
-from _config import DATABASE_FOLDER
 from _config import DATABASE_PATH
-
-try:
-    os.mkdir(DATABASE_FOLDER)
-except FileExistsError:
-    pass
 
 with sqlite3.connect(DATABASE_PATH) as connection:
     c = connection.cursor()
